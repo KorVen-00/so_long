@@ -6,7 +6,7 @@
 /*   By: mben-abb <mben-abb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 04:37:32 by mben-abb          #+#    #+#             */
-/*   Updated: 2024/05/13 01:35:53 by mben-abb         ###   ########.fr       */
+/*   Updated: 2024/05/13 03:49:39 by mben-abb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,6 @@ int	key_handler(int key, t_data *data)
 	else if (key == 53)
 	{
 		mlx_destroy_window(data->display, data->window);
-		while(1);
 		exit(0);
 	}
 	return (0);

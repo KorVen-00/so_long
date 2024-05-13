@@ -6,7 +6,7 @@
 /*   By: mben-abb <mben-abb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 04:37:44 by mben-abb          #+#    #+#             */
-/*   Updated: 2024/05/13 01:31:23 by mben-abb         ###   ########.fr       */
+/*   Updated: 2024/05/13 03:49:33 by mben-abb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,6 @@ int	main(void)
 	}
 	rend_init(&data);
 	map_rendering(&data);
-	int holder = mlx_hook(data.window, 2, 1L << 0, key_handler, &data);
-	ft_printf("%d", holder);
+	mlx_hook(data.window, 2, 1L << 0, key_handler, &data);
 	mlx_loop(data.display);
 }
